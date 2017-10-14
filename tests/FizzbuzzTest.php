@@ -39,4 +39,14 @@ final class FizzbuzzTest extends TestCase
     {
       $this->assertEquals(Fizzbuzz::isDivisibleByFifteen(9), false);
     }
+
+    public function testReturnsFizzWhenNumberIsDivisibleByThree()
+    {
+      $this->assertEquals(Fizzbuzz::play(3), "Fizz");
+    }
+
+    public function testReturnsBuzzWhenNumberIsDivisibleByFive()
+    {
+      $this->assertEquals(Fizzbuzz::play(5), "Buzz");
+    }
 }
