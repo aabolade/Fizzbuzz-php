@@ -12,4 +12,9 @@ final class Fizzbuzz
   {
     return $number%5 == 0;
   }
+
+  public static function isDivisibleByFifteen(int $number)
+  {
+    return $number%15 == 0;
+  }
 }
