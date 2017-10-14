@@ -19,4 +19,14 @@ final class FizzbuzzTest extends TestCase
     {
       $this->assertEquals(Fizzbuzz::isDivisibleByThree(5), false);
     }
+
+    public function testWhenNumberIsDivisibleByFive()
+    {
+      $this->assertEquals(Fizzbuzz::isDivisibleByFive(5), true);
+    }
+
+    public function testWhenNumberIsNotDivisibleByFive()
+    {
+      $this->assertEquals(Fizzbuzz::isDivisibleByFive(3), false);
+    }
 }

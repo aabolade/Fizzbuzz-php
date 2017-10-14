@@ -7,4 +7,9 @@ final class Fizzbuzz
   {
     return $number%3 == 0;
   }
+
+  public static function isDivisibleByFive(int $number)
+  {
+    return $number%5 == 0;
+  }
 }
