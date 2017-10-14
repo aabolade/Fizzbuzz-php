@@ -5,10 +5,14 @@ final class Fizzbuzz
 {
   public static function play(int $number)
   {
-    if (Fizzbuzz::isDivisibleByThree($number)) {
+    if (Fizzbuzz::isDivisibleByFifteen($number)) {
+      return "Fizzbuzz";
+    } elseif(Fizzbuzz::isDivisibleByThree($number)) {
       return "Fizz";
-    } else {
+    } elseif (Fizzbuzz::isDivisibleByFive($number)) {
       return "Buzz";
+    } else {
+      return $number;
     }
 
   }
